@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=]d, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/filtro.css" rel="stylesheet"></link>
+
+    <!-- Scripts -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Progressbar -->
+    <script src="js/progressbar.min.js"></script>
+</head>
+
+<body>
+    <main>
+
+    <!-- Portifólio -->
+    <div id="portifolio-area"></div>
+    <div class="container"></div>
+    <div class="row"></div>
+    <div class="col-md-12">
+        <h3 class="main-title"> Filtre seu estilo de livro favorito</h3>
+    </div>
+    <div class="col-md-12" id="filter-btn-box">
+        <button class="main-btn filter-btn" id="rom-btn"> Romance </button>
+        <button class="main-btn filter-btn" id="fic-btn"> Ficção </button>
+        <button class="main-btn filter-btn" id="fan-btn"> Fantasia </button>
+        <button class="main-btn filter-btn" id="com-btn"> Comédia </button>
+        <button class="main-btn filter-btn" id="aca-btn"> Ação / Aventura </button>
+        <button class="main-btn filter-btn" id="ter-btn"> Terror </button>
+        <button class="main-btn filter-btn active" id="all-btn"> Todos </button>
+    </div>
+    <div class="col-md-4 project-box rom">
+        <img class="img-fluid" src="imagens/amor_&_gelato.jpg" alt="Livro 1">
+    </div>
+    <div class="col-md-4 project-box rom">
+        <img class="img-fluid" src="imagens/teto_para_dois.jpg" alt="Livro 2">
+    </div>
+    <div class="col-md-4 project-box rom">
+        <img class="img-fluid" src="imagens/uma_farsa_de_amor_na_espanha.jpg" alt="Livro 3">
+    </div>
+    <div class="col-md-4 project-box rom">
+        <img class="img-fluid" src="imagens/o_acordo.jpg" alt="Livro 4">
+    </div>
+    <div class="col-md-4 project-box rom">
+        <img class="img-fluid" src="imagens/a_hipotese_do_amor.jpg" alt="Livro 5">
+    </div>
+
+    <div class="col-md-4 project-box fic">
+        <img class="img-fluid" src="imagens/os_sete_maridos_de_evelyn_hugo.jpg" alt="Livro 6">
+    </div>
+    <div class="col-md-4 project-box fic">
+        <img class="img-fluid" src="imagens/breaking_legacies.jpg" alt="Livro 7">
+    </div>
+    <div class="col-md-4 project-box fic">
+        <img class="img-fluid" src="imagens/o_conto_da_aia.jpg" alt="Livro 8">
+    </div>
+    <div class="col-md-4 project-box fic">
+        <img class="img-fluid" src="imagens/sobre_os_ossos_dos_mortos.jpg" alt="Livro 9">
+    </div>
+    <div class="col-md-4 project-box fic">
+        <img class="img-fluid" src="imagens/of_fire_and_stars.jpg" alt="Livro 10">
+    </div>
+
+    <div class="col-md-4 project-box fan">
+        <img class="img-fluid" src="imagens/a_rainha_vermelha.jpg" alt="Livro 11">
+    </div>
+    <div class="col-md-4 project-box fan">
+        <img class="img-fluid" src="imagens/o_principe_cruel.jpg" alt="Livro 12">
+    </div>
+    <div class="col-md-4 project-box fan">
+        <img class="img-fluid" src="imagens/diadema_de_ouro.jpg" alt="Livro 13">
+    </div>
+    <div class="col-md-4 project-box fan">
+        <img class="img-fluid" src="imagens/a_lagrima_de_vidro.jpg" alt="Livro 14">
+    </div>
+    <div class="col-md-4 project-box fan">
+        <img class="img-fluid" src="imagens/a_vida_invisivel_de_addie_larue.jpg" alt="Livro 15">
+    </div>
+
+    <div class="col-md-4 project-box com">
+        <img class="img-fluid" src="imagens/comédias_brasileiras_de_verão.jpg" alt="Livro 16">
+    </div>
+    <div class="col-md-4 project-box com">
+        <img class="img-fluid" src="imagens/cade_voce_bernadette.jpg" alt="Livro 17">
+    </div>
+    <div class="col-md-4 project-box com">
+        <img class="img-fluid" src="imagens/a_mandrágora.jpg" alt="Livro 18">
+    </div>
+    <div class="col-md-4 project-box com">
+        <img class="img-fluid" src="imagens/conto_do_inverno.jpg" alt="Livro 19">
+    </div>
+    <div class="col-md-4 project-box com">
+        <img class="img-fluid" src="imagens/the-comedy_bible.jpg" alt="Livro 20">
+    </div>
+
+    <div class="col-md-4 project-box aca">
+        <img class="img-fluid" src="imagens/a_maquina_do_tempo.jpg" alt="Livro 21">
+    </div>
+    <div class="col-md-4 project-box aca">
+        <img class="img-fluid" src="imagens/a_vida_e_as_aventuras_de_Robinson_Crusoé.jpg" alt="Livro 22">
+    </div>
+    <div class="col-md-4 project-box aca">
+        <img class="img-fluid" src="imagens/dom_quixote.jpg" alt="Livro 23">
+    </div>
+    <div class="col-md-4 project-box aca">
+        <img class="img-fluid" src="imagens/uma_dobra_no_tempo.jpg" alt="Livro 24">
+    </div>
+    <div class="col-md-4 project-box aca">
+        <img class="img-fluid" src="imagens/jogos_vorazes.jpg" alt="Livro 25">
+    </div>
+
+    <div class="col-md-4 project-box ter">
+        <img class="img-fluid" src="imagens/it__a_coisa.jpg" alt="Livro 26">
+    </div>
+    <div class="col-md-4 project-box ter">
+        <img class="img-fluid" src="imagens/o-exorsista.jpg" alt="Livro 27">
+    </div>
+    <div class="col-md-4 project-box ter">
+        <img class="img-fluid" src="imagens/o_colecionador.jpg" alt="Livro 28">
+    </div>
+    <div class="col-md-4 project-box ter">
+        <img class="img-fluid" src="imagens/a_assombraçao_da_cas_da_colina.jpg" alt="Livro 29">
+    </div>
+    <div class="col-md-4 project-box ter">
+        <img class="img-fluid" src="imagens/bird_box.jpg" alt="Livro 30">
+    </div>
+
+    </main>
+
+    <script src="js/filtro.js"></script>
+
+</body>
+</html>
